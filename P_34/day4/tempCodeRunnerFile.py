@@ -1,2 +1,2 @@
-a = 'Magesh'
-print('-'.join(a)) 
+print(type(242.34) == float) # True
+print(type(242) == float) # False

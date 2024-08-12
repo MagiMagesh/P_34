@@ -100,7 +100,7 @@ a = 'Magesh'
 print('-'.join(a)) # M-a-g-e-s-h
 
 
-
+# str()
 # str_data.upper()
 # str_data.lower()
 # str_data.capitalize()
@@ -117,3 +117,95 @@ print('-'.join(a)) # M-a-g-e-s-h
 # str_data.isdigit()
 # str_data.strip(), rstrip, lstrip
 # ''.join(str_data)
+# + -> concatenate
+
+# str(): '' Empty string
+print(str()) # ''
+print('')
+
+# it can convert any data type to str
+
+a = 123123
+b = str(a)
+print(type(a)) # int
+print(type(b)) # str
+
+
+a = 123123.2345324
+b = str(a)
+print(type(a)) # float
+print(type(b)) # str
+
+a = 'India'
+b = 'Cricket'
+print(a + b) # 'IndiaCricket'
+print(b + a) # 'CricketIndia'
+
+a = '10'
+b = '20'
+c = a+b
+print(c) # 1020
+print(type(c)) # str
+
+
+a = 10
+b = '20'
+c = a+b # Error
+
+
+a = '10'
+b = 20
+c = a+b # Error
+
+
+# int() # 0
+# it can convert any number to int.
+# it can convert any string to int.
+        # when only if all the elements in that str is number
+a = 123.123
+b = int(a)
+print(b) # 123
+print(type(b))
+
+a = '123.123'
+b = int(a) # Error
+print(b) # 123
+print(type(b))
+
+a = '123'
+b = int(a)  # 123
+print(b) 
+print(type(b)) # int
+
+a = '123234 234234 234'
+b = int(a)  # Error
+
+
+
+# float() # 0.0
+# it can convert any number to float
+# it can convert any string to float.
+        # when only if all the elements in that str is number
+        # that string can have one decimal
+
+a = 123
+b = float(a) # 123.0
+print(b) 
+print(type(b))
+
+a = '234234.234'
+b = float(a) # 234234.234
+print(b) 
+print(type(b)) # float
+
+a = '2342'
+b = float(a) # 2342.0
+print(b) 
+print(type(b)) # float
+
+# very important concept
+print(str == type('sdfa')) # True
+print(type(24234) == type(234234)) # True
+
+print(type(242.34) == float) # True
+print(type(242) == float) # False
