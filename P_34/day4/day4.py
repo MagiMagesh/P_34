@@ -181,7 +181,6 @@ a = '123234 234234 234'
 b = int(a)  # Error
 
 
-
 # float() # 0.0
 # it can convert any number to float
 # it can convert any string to float.
@@ -209,3 +208,147 @@ print(type(24234) == type(234234)) # True
 
 print(type(242.34) == float) # True
 print(type(242) == float) # False
+
+
+a = int(input())
+b = int(input())
+print(a + b) # 30
+
+
+# CONDITIONS & STATEMENTS:
+
+# if,else
+
+# syntax:
+# if condition:
+#     statement 1
+# else:
+#     statement 2
+
+# if the condition is True then if statement will be executed
+# if the condition is False then else statement will be executed
+# if can be presented with else. i.e if has highest priority
+# without if else will not persist.
+
+# syntax:
+# if condition:
+#     statement 1
+# elif condition:
+#     statement 2
+# elif condition:
+#     statement 3
+# elif condition:
+#     statement 4
+# else:
+#     statement 
+
+# if can be presented with else. i.e if has highest priority
+# else is optional.
+# if-else - there will be only one output.
+# First, true condition statement will only be executed
+
+
+
+# condition can be anything
+# python will take it as either True or False
+
+# for a condition to be True it is Infinite scanario
+# for a condition to be False it is certain scenario - 0,0.0,False,'',None or any empty datatype
+
+'234.234' # True
+0.0 # False
+0.00000001 # True
+
+
+if True:
+    print('If statement')
+else:
+    print('else statement')
+
+
+if False:
+    print('If statement')
+else:
+    print('else statement')
+
+if False:
+    print('If statement')
+
+if True:
+    print('If statement')
+
+if 'Magesh'+ ' Good':
+    print('Statement 1')
+else:
+    print('Statement 2')
+
+if 10 % 2 * 10:
+    print('Statement 3')
+
+# 0,0.0,False,'',None
+
+if '10*0':
+    print(1) # 
+if '':
+    print(2)
+else:
+    print(3) # 3
+if str == type('sdfa'):
+    print(4) # 
+else:
+    print(5)
+if int == type(int('234')):
+    print(6) #
+
+
+# 1. carrot
+# 2. beetroot
+# 3. brinjal
+# 4. tomato
+# 5. whatever we want
+
+wanted = 'carrot'
+shop = 'brinjal'
+
+if 'carrot' == shop: 
+    print(1)
+elif 'beetroot' == shop:
+    print(2)
+elif 'brinjal' == shop:
+    print(3)
+elif 'tomato' == shop:
+    print(4)
+else:
+    print(5)
+
+if 1*9*34 / 24: # 0 | 0.0
+    print(1)
+elif 3424% 2:
+    print(2)
+elif 'Magesh':
+    print(3)
+elif True:
+    print(4)
+
+if 123234 % 5 ==0 :
+    print(1)
+elif 'Magseh':
+    print(2)
+if 'False':
+    print(3)
+else:
+    print(4)
+if 89 % 3 + 10 / 2.5:
+    print(5)
+elif type('Magesh'):
+    print(6)
+elif '0':
+    print(7)
+elif True:
+    print(8)
+if '0':
+    print(9)
+elif 'False':
+    print(10)
+else:
+    print(11)
