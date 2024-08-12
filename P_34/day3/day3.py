@@ -158,6 +158,8 @@ print(dir(str))
 # function for string
 # capitalize',  'center', 'count',  'endswith', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'istitle', 'isupper', 'join',  'lower', 'lstrip', 'partition', 'removeprefix', 'removesuffix',  'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title',  'upper','find'
 
+
+
 # str_data.upper()       - Convert all the element in the string to uppercase
 # str_data.lower()       - Convert all the element in the string to lowercase
 # str_data.capitalize()  - First word in that string will be capital letter
