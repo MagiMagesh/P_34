@@ -155,7 +155,7 @@ print(a[::-2])
 
 print(dir(str))
 
-# function for string
+# function for string | methods for string
 # capitalize',  'center', 'count',  'endswith', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'istitle', 'isupper', 'join',  'lower', 'lstrip', 'partition', 'removeprefix', 'removesuffix',  'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title',  'upper','find'
 
 

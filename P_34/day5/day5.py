@@ -183,3 +183,41 @@ print(type(b)) # list
 print(b[1]) # 'Rose'
 print(a[-1][1]) # 'Rose'
 print(type(a[-1][1])) # str
+
+
+a = [ 1, 2.234 , [['Magesh','Jasmine'],3,4.5,6.5] , True , 5   ]
+print(a[2])
+print(a[2][0])
+print(a[2][0][1])
+print(a[2][0][1][:3])
+
+a = 'Jasmine'
+print(a[:3])
+
+a = [1,'2',3.5,[4,2,1]]
+for i in a:
+    print('type is' ,type(i),'value is',i)
+
+# 1
+# 2
+# 3.5
+# [4,2,1]
+
+# function for list | methods for list
+
+a = '12345'
+b = [6,7,8,9,10]
+
+for i in range(len(b)):
+    print(int(a[i]) * b[i])
+
+# 6
+# 14
+# 24...
+
+# list funtctions | list methods
+
+# Q1. a = [1,2,'3',4,5,6,'7'] # add 5 to all these numbers
+# Q2. a = [['Magesh','Good','1,2',345,345.456],3,4,5,['33,234,','one']]
+    # need to get oo as otuput
+    # need to get 345.456 as otuput
