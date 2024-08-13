@@ -141,5 +141,18 @@ for i in range(5):
 
 a = 'i live in India.This is My country'
 
-for i in range(5):
+for i in range(len(a)): # 0-14
     print(a[i])
+
+a = 'Magesh Magesh Mageesesh Mageesesh'
+print(len(a))
+print(a[32])
+print(a[33]) # Error - str index out of range
+
+a = '123123345'
+b = '928378234'
+9
+4
+24
+3
+14
