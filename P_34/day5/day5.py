@@ -156,3 +156,30 @@ b = '928378234'
 24
 3
 14
+
+for i in range(len(b)):
+    print(int(a[i]) * int(b[i]))
+
+# list
+# heterogeneous datatype
+[]
+# elements are seperated by ,
+a = [ 1, 2.234 , 'Magesh' , True , 5  ]
+  #   0   1         2         3    4     
+
+print(a[2])
+print(type(a[2])) # str
+print(a[1:4]) # [2.234, 'Magesh', True]
+
+# indexing & slicing is same as str
+
+
+
+a = [ 1, 2.234 , 'Magesh' , True , 5  , ['Jasmine','Rose','Lotus'] ]
+  #   0    1        2        3      4           5
+b = a[-1]
+print(b) # ['Jasmine', 'Rose', 'Lotus']
+print(type(b)) # list
+print(b[1]) # 'Rose'
+print(a[-1][1]) # 'Rose'
+print(type(a[-1][1])) # str
