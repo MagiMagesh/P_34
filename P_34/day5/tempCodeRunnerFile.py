@@ -1,6 +1,5 @@
-a = '45622426289'
-for i in a:
-    if int(i)%2==0:
-        print(i,'is','even')
-    else:
-        print(i,'is','odd')
+a = '56789'
+b = '12345'
+
+for i in range(5):
+    print(int(a[i]) + int(b[i]))

@@ -104,3 +104,42 @@ for i in a:
         print(i,'is','even')
     else:
         print(i,'is','odd')
+
+# range()
+# 1. range(n) # pack of number from 0 to n-1
+
+print(range(5))  # range(0,5) = 0,1,2,3,4
+
+for i in range(5):
+    print(i)
+
+a = '98765'
+
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[3])
+print(a[4])
+
+a = '98765'
+
+for i in range(5):
+    print(a[i])
+
+a = '56789'
+b = '12345'
+
+for i in range(5):
+    print(int(a[i]) + int(b[i]))
+
+# 6
+# 8
+# 10
+# 12
+# 14
+
+
+a = 'i live in India.This is My country'
+
+for i in range(5):
+    print(a[i])
