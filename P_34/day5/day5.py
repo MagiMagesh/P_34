@@ -65,9 +65,9 @@ a = '123456789'
 # odd
 # even,..
 a = '45622426289'
-# even
-# odd
-# even
+# 4 is even
+# 5 is odd
+# 6 is even
 # even
 # even
 # even
@@ -84,8 +84,23 @@ else:
 
 
 
-a = input()
+a = input('a')
 if int(a)%2==0:
     print('even')
 else:
     print('odd')
+
+a = '45622426289'
+for i in a:
+    if int(i)%2==0:
+        print('even')
+    else:
+        print('odd')
+
+
+a = '45622426289'
+for i in a:
+    if int(i)%2==0:
+        print(i,'is','even')
+    else:
+        print(i,'is','odd')
