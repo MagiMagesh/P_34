@@ -72,3 +72,20 @@ a = '45622426289'
 # even
 # even
 # even...
+
+print(10 % 2)
+print(10 % 2 == 0)
+
+a = 56
+if a%2==0:
+    print('even')
+else:
+    print('odd')
+
+
+
+a = input()
+if int(a)%2==0:
+    print('even')
+else:
+    print('odd')

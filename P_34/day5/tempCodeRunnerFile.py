@@ -1,3 +1,5 @@
 a = input()
-for i in a:
-    print(i)
+if int(a)%2==0:
+    print('even')
+else:
+    print('odd')
