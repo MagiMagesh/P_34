@@ -308,17 +308,22 @@ print(['magesh'] * 3) # that string will be dupilcated to n no of times
 
 # Q2. a = 'i live in India'
 # count of all the elements in a
-# ex: i is repeated for 5 times
-# ex: l is repeated for 15 times
+# ex: 'i' is repeated for 5 times
+# ex: 'l' is repeated for 4 times
+# ex: ' ' is repeated for 4 times
 
 # Q3. 
+# n = 7
 # *
 # **
 # ***
 # ****
 # *****
+# ******
+# *******
 
 # Q4.
+# n = 5
 #     *
 #    **
 #   ***
