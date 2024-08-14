@@ -6,7 +6,6 @@
 # strip, rstrip, lstrip
 # join
 
-
 # .split
 
 
@@ -60,7 +59,7 @@ print(a.islower()) # True
 # it will remove only from the right & left extremes substring
 # it will remove the substring given inside it
 # if im not giving the substring by defualt it will be space
-
+# .strip(substring)
 
 a = '    i live in india     '
 print(a.strip(' ')) # 'i live in india'
@@ -105,18 +104,18 @@ print('-'.join(a)) # M-a-g-e-s-h
 # str_data.lower()
 # str_data.capitalize()
 # str_data.title()
-# str_data.startswith()
-# str_data.endswith()
-# str_data.count()
-# str_data.index()
-# str_data.find()
+# str_data.startswith(substring)
+# str_data.endswith(substring)
+# str_data.count(substring)
+# str_data.index(substring)
+# str_data.find(substring)
 # str_data.isupper()
 # str_data.islower()
 # str_data.isalnum()
 # str_data.isalpha()
 # str_data.isdigit()
 # str_data.strip(), rstrip, lstrip
-# ''.join(str_data)
+# 'substring'.join(str_data)
 # + -> concatenate
 
 # str(): '' Empty string

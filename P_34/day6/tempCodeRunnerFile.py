@@ -1,3 +1,3 @@
-a = [[['Magesh','Good','1,2',345,345.456]],3,4,5,['33,234,','one']]
-print(a[0])
-print(a[0][0][1][1:3])
+a = 'I67ilive67iin67iIndia'
+b = a.split('67i') # ['I', 'live' , 'in', 'India' ]
+print(b)
