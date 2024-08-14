@@ -253,7 +253,7 @@ print(a + b) # 30
 # python will take it as either True or False
 
 # for a condition to be True it is Infinite scanario
-# for a condition to be False it is certain scenario - 0,0.0,False,'',None or any empty datatype
+# for a condition to be False it is certain scenario - 0,0.0,False,'',[],None or any empty datatype
 
 '234.234' # True
 0.0 # False
