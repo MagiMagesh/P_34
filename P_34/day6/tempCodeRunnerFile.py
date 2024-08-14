@@ -1,3 +1,4 @@
-a = 'I67ilive67iin67iIndia'
-b = a.split('67i') # ['I', 'live' , 'in', 'India' ]
-print(b)
+
+a = ['I', 'live' , 'in', 'India' ]
+a.append('Magesh') # ['I', 'live' , 'in', 'India' , 'Magesh' ]
+print(a) 

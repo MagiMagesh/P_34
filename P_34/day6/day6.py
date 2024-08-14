@@ -19,11 +19,6 @@ a = [[['Magesh','Good','1,2',345,345.456]],3,4,5,['33,234,','one']]
 print(a[0])
 print(a[0][0][1][1:3])
 
-# list functions/ list methods
-
-print(dir(list))
-
-'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
 
 # str function :
 
@@ -57,3 +52,28 @@ print(b)
 a = 'I67ilive67iin67iIndia'
 b = a.split('67i') # ['I', 'live' , 'in', 'India' ]
 print(b)
+
+# list functions/ list methods
+
+print(dir(list))
+
+'append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort'
+
+
+# len() - can be used for many iterable datatype
+# number of element int that datatype
+
+a = ['I    ', 'live  ' , 'in', 'Ina876876dia' ]
+print(len(a)) # 4
+
+# append:
+# list_data.append(any_element)
+
+# 1. append will take only one element
+# 2. this element will be added to the end of the list
+# 3. this action will update the source
+
+
+a = ['I', 'live' , 'in', 'India' ]
+a.append('Magesh') # ['I', 'live' , 'in', 'India' , 'Magesh' ]
+print(a) 
