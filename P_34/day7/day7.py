@@ -115,3 +115,96 @@ i = 0
 while i < len(a):
     print(a[i])
     i = i + 1
+
+
+# logical operators:
+# always will give the output in bool
+
+# and , or, not
+
+# syntax:
+# condition1 and condition2
+
+print(True and True) # True
+print(True and False) # False
+print(False and False) # False
+
+if ('True' and 'False'):
+    print(1)
+else:
+    print(2)
+
+if ('True' and False):
+    print(1)
+else:
+    print(2)
+
+if ('True' and 0):
+    print(1)
+else:
+    print(2)
+
+# syntax:
+# or
+print(True or False) # True
+print(True or True) # True
+print(False or False) # False
+
+
+if ('True' or False):
+    print(1)
+else:
+    print(2)
+
+if ('True' or 0):
+    print(1)
+else:
+    print(2)
+
+if (10%2.5 or 0):
+    print(1)
+else:
+    print(2)
+
+print(10%2.5)
+
+# not:
+# change True to False & viceversa
+
+# syntax:
+# not condition
+
+print(not 'Magesh') # False
+print(not '') # True
+
+if not True:
+    print(1)
+else:
+    print(2)
+
+
+if not(not 'True'):
+    print(1)
+else:
+    print(2)
+
+
+# in
+#  wehter that particular element is present in that data type or not
+
+# syntax for str:
+# 'substring' in  string_data
+
+a = 'I live in India 54321'
+
+print('Z' in a) # False
+print('Z' not in a) # True
+print('D' in a) # False
+print('1' in a) #
+print(1 in a) # Error
+
+a = ['I', 'live' , 'in', 'India','1',1 ]
+
+print('i' in a) # False
+
+

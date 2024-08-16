@@ -1,5 +1,6 @@
-a = [1,1,2,3,4,34,5,543,545,6]
-i = 0
-while i < len(a):
-    print(a[i])
-    i = i + 1
+a = 'I live in India 54321'
+
+print('Z' in a) # False
+print('Z' not in a) # True
+print('D' in a) # False
+print('1' in a) #
