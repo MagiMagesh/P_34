@@ -248,7 +248,87 @@ print(b)
 
 
 a = '238462742388368'
-# 76
+# 74
+b = 0
+for i in a:
+    b = b + int(i)
+print(b)
 
 # need to discuss:
 # join & split for list
+
+a = '238462'
+
+b = 0
+for i in a:
+    b = b + int(i)
+print(b)
+
+# 1. b = 0; i = 2 ;  b = 0 + 2 = 2
+# 2. b = 2; i = 3 ;  b = 2 + 3 = 5
+# 2. b = 5; i = 8 ;  b = 5 + 8 = 13
+# 2. b = 13; i = 4 ;  b = 13 + 4 = 17
+
+# ''.join(list_data)
+# to perform join for str all the elements in that list should be a str
+
+a = ['1', '2', '3', '4', '5', '6']
+print(''.join(a))
+print(' '.join(a))
+
+
+a = ['1', '2', '3', '4', '5', '6', 7]
+print(' '.join(a)) # Error
+
+
+# Q1. a = 'i live in India' # code optimisation
+# count of all the elements in a
+# ex: 'i' is repeated for 5 times
+# ex: 'l' is repeated for 4 times
+# ex: ' ' is repeated for 4 times
+
+
+# Q2. a = [1,2,3,'magseh',23,3,24,2.5,'23']
+# 81.5
+# sum of all the valid numbers
+
+# Q3. 
+# 12345
+# 1234
+# 123
+# 12
+# 1
+
+# Q4.
+# Given a number N, print the odd digits in the number(space seperated) or print -1 if there is no odd digit in the given number.
+# Input Size : N <= 100000
+# Sample Testcase :
+# INPUT
+# 2143
+# OUTPUT
+# 1 3
+
+# Q5.
+# Given 2 numbers N and K followed by elements of N .Print 'yes' if K exists else print 'no'.
+# Sample Testcase :
+# INPUT
+# 4 2
+# 1 2 3 3
+# OUTPUT
+# yes
+
+
+# Q6.
+# You are given an array of ids of prisoners. The jail authority found that there are some prisoners of same id. Your task is to help the authority in finding the common ids.
+
+# Input Description:
+# First line contains a number ‘n’ representing no of prisoners. Next line contains n space separated numbers.
+
+# Output Description:
+# Print the ids which are not unique. Print -1 if all ids are unique
+
+# Sample Input :
+# 7
+# 1 1 11 121 131 141 98
+# Sample Output :
+# 1

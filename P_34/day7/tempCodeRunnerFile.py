@@ -1,7 +1,3 @@
-a = '112312312423423534545654'
-
-b = ''
+a = 'i live in India'
 for i in a:
-    if i not in b:
-        b = b + i
-print(b)
+    print(i,' is repeated for ',a.count(i),'times')
