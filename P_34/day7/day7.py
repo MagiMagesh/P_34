@@ -27,6 +27,10 @@ for i in a:
 # ex: 'l' is repeated for 4 times
 # ex: ' ' is repeated for 4 times
 
+a = 'i live in India'
+for i in a:
+    print(i,' is repeated for ',a.count(i),'times')
+
 # Q3. 
 # n = 7
 # *
@@ -37,6 +41,19 @@ for i in a:
 # ******
 # *******
 
+print(' '.join(1 * '*'))
+print(' '.join(2 * '*'))
+print(' '.join(3 * '*'))
+print(' '.join(4 * '*'))
+print(' '.join(5 * '*'))
+
+
+
+n = 51
+
+for i in range(1,n+1):
+    print(' '.join(i * '*'))
+
 # Q4.
 # n = 5
 #     *
@@ -44,3 +61,7 @@ for i in a:
 #   ***
 #  ****
 # *****
+
+n = 15
+for i in range(1,n+1):
+    print((n-i)*' ' + i*'*')
