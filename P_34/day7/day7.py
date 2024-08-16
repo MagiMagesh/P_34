@@ -211,8 +211,44 @@ print('in' not in a) # False
 
 print(1  in a) # True
 
+# to get the unique element
 a = '112312312423423534545654'
 
+# 1. to create an empty list
+# 2. to take the elements
+# 3. to put that element in empty list if elememnt is not already present 
+# 4. the element present in the list will be the new elment
+
+a = '112312312423423534545654'
+
+b = []
+for i in a:
+    if i not in b:
+        b.append(i)
+print(b)
+
+a = '112312312423423534545654'
+
+b = ''
+for i in a:
+    if i not in b:
+        b = b + i
+print(b)
+
+# 1. i =1 ; b = '1'
+# 2. i = 1; 
+# 3. i = 2; b = '12'
+# 4. i = 3; b = '123'
+# 5. i = 1; 
+# 6. i = 2; 
+# 7. i = 3; 
+# 8. i = 1; 
+# 9. i = 2; 
+# 0. i = 4; b = '1234'
 
 
+a = '238462742388368'
+# 76
 
+# need to discuss:
+# join & split for list
