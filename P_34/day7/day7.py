@@ -280,7 +280,7 @@ print(' '.join(a))
 a = ['1', '2', '3', '4', '5', '6', 7]
 print(' '.join(a)) # Error
 
-
+# solve this problem using both for loop and while loop
 # Q1. a = 'i live in India' # code optimisation
 # count of all the elements in a
 # ex: 'i' is repeated for 5 times
@@ -288,16 +288,23 @@ print(' '.join(a)) # Error
 # ex: ' ' is repeated for 4 times
 
 
+
+# solve this problem using both for loop and while loop
 # Q2. a = [1,2,3,'magseh',23,3,24,2.5,'23']
 # 81.5
 # sum of all the valid numbers
 
+
+
+# solve this problem using both for loop and while loop
 # Q3. 
 # 12345
 # 1234
 # 123
 # 12
 # 1
+
+
 
 # Q4.
 # Given a number N, print the odd digits in the number(space seperated) or print -1 if there is no odd digit in the given number.
@@ -308,6 +315,8 @@ print(' '.join(a)) # Error
 # OUTPUT
 # 1 3
 
+
+
 # Q5.
 # Given 2 numbers N and K followed by elements of N .Print 'yes' if K exists else print 'no'.
 # Sample Testcase :
@@ -316,6 +325,7 @@ print(' '.join(a)) # Error
 # 1 2 3 3
 # OUTPUT
 # yes
+
 
 
 # Q6.
@@ -332,3 +342,15 @@ print(' '.join(a)) # Error
 # 1 1 11 121 131 141 98
 # Sample Output :
 # 1
+
+# Q7.
+# to print n number of fib numbers
+# 0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+# 13
+# 21
