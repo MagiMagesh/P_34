@@ -1,6 +1,7 @@
-a = 'I live in India 54321'
+a = ['I', 'live' , 'in', 'India','1',1 ]
 
-print('Z' in a) # False
-print('Z' not in a) # True
-print('D' in a) # False
-print('1' in a) #
+print('i' in a) # False
+
+print('in' not in a) # False
+
+print(1  in a) # True
