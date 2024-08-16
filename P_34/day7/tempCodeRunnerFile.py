@@ -1,6 +1,6 @@
-a = 15
+a = 'i live in India'
 
-while a > 10:
-    print(a)
-    a = a - 1
-print('the value of a is ',a) # 10
+i = 0
+while i < len(a):
+    print(a[i])
+    i = i + 1

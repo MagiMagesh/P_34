@@ -100,3 +100,12 @@ a = 15
 while a > 10:
     a = a - 1
     print(a)
+
+
+
+a = 'i live in India'
+
+i = 0
+while i < len(a):
+    print(a[i])
+    i = i + 1
