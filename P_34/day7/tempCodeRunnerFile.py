@@ -1,3 +1,6 @@
-n = 15
-for i in range(1,n+1):
-    print((n-i)*' ' + i*'*')
+a = 15
+
+while a > 10:
+    print(a)
+    a = a - 1
+print('the value of a is ',a) # 10

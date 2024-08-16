@@ -65,3 +65,38 @@ for i in range(1,n+1):
 n = 15
 for i in range(1,n+1):
     print((n-i)*' ' + i*'*')
+
+
+# while loop |  infinite loop | condition loop
+
+# syntax:
+
+# while condition:
+#     statement
+
+# if the condition is True wile will be keep on executing the statement.
+# till the ocndition is False while loop will be keep on running.
+
+# example for infinite loop
+# while True:
+#     print(1)
+
+
+a = 15
+
+while a > 10:
+    print(a)
+    a = a - 1
+print('the value of a is ',a) # 10
+
+# 1. a = 15, print(15) , a = 14
+# 2. a = 14, print(14) , a = 13
+# 2. a = 13, print(13) , a = 12
+# 2. a = 12, print(12) , a = 11
+# 2. a = 11, print(11) , a = 10
+
+a = 15
+
+while a > 10:
+    a = a - 1
+    print(a)
