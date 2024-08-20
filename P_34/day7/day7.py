@@ -204,6 +204,7 @@ print('1' in a) #
 print(1 in a) # Error
 
 a = ['I', 'live' , 'in', 'India','1',1 ]
+print(a[11]) # error list index out of range
 
 print('i' in a) # False
 
@@ -221,11 +222,25 @@ a = '112312312423423534545654'
 
 a = '112312312423423534545654'
 
+
+
+
 b = []
 for i in a:
     if i not in b:
         b.append(i)
 print(b)
+
+
+
+# item assignment:
+# to replace one element to another element 
+# list_data[index_number] = new_element
+
+a = [1,2,3,4,5,6,'Magesh',[1,2,3,4]]
+a[4] = 15
+print(a)
+
 
 a = '112312312423423534545654'
 

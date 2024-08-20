@@ -299,6 +299,15 @@ print('magesh' * 3) # that string will be dupilcated to n no of times
 print(['magesh'] * 3) # that string will be dupilcated to n no of times
 # ['magesh','magesh','magesh']
 
+# str()
+# list() # it will convert any iterable-data type to list
+# the element of iterable-data will become element of list
+
+a = 'Magesh'
+b = list(a) # ['m','a','g','e','s','h']
+print(b)
+
+
 # Q1. a = [1,'123','magesh',345,'phone','11',234.234,'zer','Earth','Moon','Mars'] the output should be
 # 6
 # 128

@@ -1,3 +1,2 @@
-a = 'i live in India'
-for i in a:
-    print(i,' is repeated for ',a.count(i),'times')
+a = ['I', 'live' , 'in', 'India','1',1 ]
+print(a[11])
