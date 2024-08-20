@@ -155,4 +155,62 @@ print(a.issubset(b))
 
 
 # dict:
+{}
+dict() # {}
 
+# there is no psoition for dict
+# there is no indexing for dict
+
+a = {'key':'value','key2':'value2','key2':'value3'}
+print(a)
+
+
+# 1. all the elements in list has key & value pair
+# 2. key will be in left hand side , value will be in right hand side
+# 3. key will be unique. if the key is duplicated the lateset key vavue will be considired
+# 4. value can be taken with the help of key dict_data[key]
+# 5. we can upate the value witht he help of key dict_data[old_key] = new_value
+# 6. to add a new key value pair dict_data[new_key] = new_value
+# 7. for a key it should be int,float,bool,str,tuple
+# 8. for value it can be any data type.
+
+d = {'key':'value','key2':'value2','key3':'value3'}
+print(d)
+print(d['key2'])
+d['key3'] = "Magesh"
+print(d)
+d['plantes'] = ['Mercury','Venus','Earth']
+print(d)
+
+
+d = {1:'value',2.1:'value2',('key3'):'value3'} 
+d = {1:'value',2.1:'value2',['key3']:'value3'} # Error
+
+# dict functions:
+
+print(dir(dict))
+# 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+# 1. keys:
+
+d = {'key':'value','key2':'value2','key3':'value3',1:'value',2.1:'value2',('key3'):'value3'}
+print(d.keys())
+print(d.values())
+d.update({"names":['Magesh','Jasmine','Rose','Lotus'],45:90,90:87})
+print(d)
+print(d.items()) # dict_items([(key,value),(key1,value1),(key2,value2),...])
+
+# pop(key) 
+# is used to remove the key-value pair
+
+d = {'key':'value','key2':'value2','key3':'value3',1:'value',2.1:'value2'}
+
+d.pop('key3')
+print(d)
+
+d = {'key':'value','key2':'value2','key3':'value3',1:'value',2.1:'value2'}
+
+# print(d['key31']) # Error
+print(d.get('key32')) # None
+
+# 'clear', 'copy' - similar to list
