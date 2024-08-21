@@ -138,3 +138,58 @@ print(b)
 # 2. i = 2, b = 1 , b = 1 + 2 = 3
 # 2. i = 3, b = 3 , b = 3 + 3 = 6
 # 2. i = 4, b = 6 , b = 6 + 4 = 10 ...
+
+
+
+def  addition(data):                 # name is called as positional arguments
+    b = 0
+    for i in data:
+        b = b + i
+    print(b)
+
+a = [1,2,3,4,5,6,7,8,9]
+named_data = [111,121,131,141,51,36,4375,84356]
+
+addition(a)
+addition(named_data)
+
+
+# inputs to a functions:
+
+# 1. positional arguments
+# 2. multiple arguments
+# 3. keyword arguments
+# 4. multiple keyword arguments
+# 4. default  arguments
+
+def  addition(*args):                 
+    print(args) # tuple
+    print(type(args)) # tuple
+
+def  addition(*mage):                 
+    print(mage) # tuple
+    print(type(mage)) # tuple
+
+addition(1,2,3,4,5,6,7,8)
+addition(1,2,3,4)
+
+def  welcome(name,age):                
+    print(f'My name is {name}')
+    print(f'My age is {age}')
+welcome(age = 11,name='Magesh')
+
+def  welcome(**kwargs):                
+    print(kwargs) # it will be a dict
+welcome(age = 11,name='Magesh',sex='M',salary = 10,dob='11-11-11')
+welcome(age = 11,name='Magesh')
+welcome(age1 = 11,name1='Magesh',sex='M',salary = 10,dob='11-11-11')
+
+
+
+def  welcome(name,age,alive=True):                
+    print(f'My name is {name}')
+    print(f'My age is {age}')
+    print(f'My alive is {alive}')
+
+welcome(age = 11,name='Magesh')
+welcome(age = 111,name='qwerqrwe',alive=False)

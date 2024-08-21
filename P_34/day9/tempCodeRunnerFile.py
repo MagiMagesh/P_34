@@ -1,5 +1,7 @@
-a = [1,2,3,4,5,6,7,8,9]
-b = 0
-for i in a:
-    b = b + i
-print(b)
+def  welcome(name,age,alive=True):                
+    print(f'My name is {name}')
+    print(f'My age is {age}')
+    print(f'My alive is {alive}')
+
+welcome(age = 11,name='Magesh')
+welcome(age = 111,name='qwerqrwe',alive=False)
