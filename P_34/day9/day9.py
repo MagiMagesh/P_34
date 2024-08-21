@@ -71,3 +71,70 @@ print('3.000')
 e = "My name is {} My age is {}".format(24,'Magesh') # positional values
 print(e)
 
+
+# function:
+    # 1. inbuilt function
+    # 2. custom function
+        # 1. def
+        # 2. lambda
+
+# print()
+# type()
+# len()
+# int()
+# float()
+# list()
+
+
+# function using def keyword:
+
+# syntax for a function:
+# def function_name():
+#     function logic
+
+def  hello():               # created a function
+    print('Hello World')
+
+hello()                     # calling a function
+hello()
+hello()
+
+
+def  welcome():               # used to get input to a function            
+    print('Hello! welcome')
+welcome()
+
+
+name = input("Enter your Name: ")
+
+def  welcome(name):                 # name is called as positional arguments
+    print(f'Hello {name}! welcome')
+
+welcome('Magesh')
+welcome('Dinesh')
+welcome('Ram')
+
+
+def  welcome(name,age):                 # name is called as positional arguments
+    print(f'My name is {name}')
+    print(f'My age is {age}')
+
+welcome('Magesh',10)
+print(10*'-')
+welcome('Dinesh',11)
+print(10*'-')
+welcome('Ram',12)
+print(10*'-')
+welcome(11,'Magesh')
+
+a = [1,2,3,4,5,6,7,8,9]
+named_data = [111,121,131,141,51,36,4375,84356]
+b = 0
+for i in a:
+    b = b + i
+print(b)
+
+# 1. i = 1, b = 0 , b = 0 + 1 = 1
+# 2. i = 2, b = 1 , b = 1 + 2 = 3
+# 2. i = 3, b = 3 , b = 3 + 3 = 6
+# 2. i = 4, b = 6 , b = 6 + 4 = 10 ...
