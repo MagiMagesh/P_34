@@ -1,7 +1,6 @@
-def  welcome(name,age,alive=True):                
-    print(f'My name is {name}')
-    print(f'My age is {age}')
-    print(f'My alive is {alive}')
+def right_triangle(n):
+    for i in range(n):
+        print(i*'*')
 
-welcome(age = 11,name='Magesh')
-welcome(age = 111,name='qwerqrwe',alive=False)
+right_triangle(4)
+right_triangle(9)
