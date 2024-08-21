@@ -92,6 +92,8 @@ print(e)
 # def function_name():
 #     function logic
 
+# any input given inside funciton are local variable okay, what is local variable? Local variable is something that which is similar to
+
 def  hello():               # created a function
     print('Hello World')
 
@@ -138,8 +140,6 @@ print(b)
 # 2. i = 2, b = 1 , b = 1 + 2 = 3
 # 2. i = 3, b = 3 , b = 3 + 3 = 6
 # 2. i = 4, b = 6 , b = 6 + 4 = 10 ...
-
-
 
 def  addition(data):                 # name is called as positional arguments
     b = 0
@@ -200,3 +200,30 @@ def right_triangle(n):
 
 right_triangle(4)
 right_triangle(4)
+
+a = '2423423'
+b = [1,2,3]
+c = {1:'one',2:[1,2,3,4,5,5,6]}
+
+
+
+def  addition(data):                 # name is called as positional arguments
+    b = 0
+    for i in data:
+        b = b + 1
+    print(f'the number of elements {b} present is:',b)
+
+a = '2423423'
+b = [1,2,3]
+c = {1:'one',2:[1,2,3,4,5,5,6]}
+addition(a)
+addition(b)
+addition(c)
+
+gv = 10 # global variable
+
+def greet(lv): # lv local variable
+    print(lv)
+    print(gv) # 10
+# print(lv)
+greet('one')

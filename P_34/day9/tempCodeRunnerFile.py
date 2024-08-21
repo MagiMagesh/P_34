@@ -1,6 +1,7 @@
-def right_triangle(n):
-    for i in range(n):
-        print(i*'*')
+gv = 10 # global variable
 
-right_triangle(4)
-right_triangle(9)
+def greet(lv): # lv local variable
+    print(lv)
+    print(gv) # 10
+# print(lv)
+greet('one')
