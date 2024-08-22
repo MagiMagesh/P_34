@@ -1,15 +1,9 @@
-def sample_fun(a,b):
-    if a > b:
-        print(a)
-    else:
-        return b
+def greater(a,b):
+    if a>b:
+        return (1,2,3,4,5)
+    return ['1','2','3','4','5']
 
-a = sample_fun(10,15)
-
-print(a)
-
-a = sample_fun(104,15)
-
-c = a + 10 # error
-
-print(c)
+c=greater(2,5)
+print(c) # ()'1','2','3','4','5')
+c=greater(12,5)
+print(c) # [1,2,3,4,5]

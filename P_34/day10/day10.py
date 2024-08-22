@@ -86,3 +86,33 @@ print(c)
 # if a > b - a
 # if b > a - a*b
 
+def greater(a,b):
+    if a>b:
+        return a
+    return b*a
+
+c=greater(2,5)
+print(c) # 10
+c=greater(12,5)
+print(c) # 12
+
+
+def greater(a,b):
+    if a>b:
+        return [1,2,3,4,5]
+    return ['1','2','3','4','5']
+
+c=greater(2,5)
+print(c) # ['1','2','3','4','5']0
+c=greater(12,5)
+print(c) # [1,2,3,4,5]
+
+def greater(a,b):
+    if a>b:
+        return (1,2,3,4,5)
+    return ['1','2','3','4','5']
+
+c=greater(2,5)
+print(c) # ()'1','2','3','4','5')
+c=greater(12,5)
+print(c) # [1,2,3,4,5]
