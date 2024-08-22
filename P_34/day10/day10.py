@@ -255,3 +255,12 @@ print(c)
 a = [1,2,3,4,5,6,7,8]
 c = [i for i in a if i%2 !=0]
 print(c)
+
+# 1. '12313234234234' # sum of all the numbers
+a = '12313234234234'
+from functools import reduce
+c = reduce(lambda x,y: int(x)+int(y),a)
+print(c)
+
+# MFR - higher order funcitons:
+# when any function is given as aruguments to another funciton it is an higer order funciton.
