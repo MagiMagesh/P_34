@@ -1,4 +1,10 @@
-lam = lambda a : int(a)
+a = [1,2,3,4,5]
 
-print(type(lam('1234'))) # 3
-print((lam('1234'))) # 3
+def basic(n):
+    return n * 10
+
+b = list(map(basic,a))
+
+c = list(map(lambda n : n*10 , a))
+print(c)
+print(b)

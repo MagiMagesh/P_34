@@ -146,3 +146,33 @@ print((lam('1234'))) # 3
 # agenda
 # MRF
 # comphrension
+
+# Map | Filter | Reduce
+
+# map:
+
+# syntax:
+# map(function,iterable_datatype)
+
+
+# 1. output of the map is an iterator - list(),tuple(),set()
+# 2. it will apply th elements in iterable_datatype to the functions one by one  
+    # that function result will be stored in map iterator.
+# 3. only one arguments should be used in functions
+
+
+# map(funciton,a) # we should declare a function
+
+a = [1,2,3,4,5]
+
+def basic(n):
+    return n * 10
+
+b = list(map(basic,a))
+
+c = list(map(lambda n : n*10 , a))
+print(c)
+print(b)
+
+# a = input() # 1 3 5 7 9
+# [5,15,25,35,45]
