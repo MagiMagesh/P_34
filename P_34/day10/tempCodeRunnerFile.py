@@ -1,10 +1,3 @@
-a = [1,2,3,4,5]
-
-def basic(n):
-    return n * 10
-
-b = list(map(basic,a))
-
-c = list(map(lambda n : n*10 , a))
+a = [1,2,3,4,5,6,7,8]
+c = [i for i in a if i%2 ==0]
 print(c)
-print(b)

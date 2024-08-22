@@ -176,3 +176,49 @@ print(b)
 
 # a = input() # 1 3 5 7 9
 # [5,15,25,35,45]
+
+
+a = input().split() # ['1','3','5','7','9']
+print(a)
+c = list(map(lambda n : int(n)*10 , a))
+print(c)
+
+# Filter:
+
+# similar to map.
+# when a function is returing True only that input will be considired
+# the input will not be altered.
+
+
+a = ['1',2,'3',4,'5','7',4,'9'] # ['1',2,'3',4,'5','7',4,'9']
+print(a)
+c = list(filter(lambda n : int(n) % 2 ==0, a))
+print(c) # [2,4,4]
+
+
+a = [1,2,3,4,5,6,7,'1','2','3','4',8] # ['1',2,'3',4,'5','7',4,'9']
+print(a)
+c = list(filter(lambda n : int(n) % 2 ==0, a))
+print(c) # [2,4,6,'2','4']
+
+# REDUCE:
+
+
+
+# comphrension:
+a = [1,2,3,4,5,6,7,8]
+# even numbers in new list
+
+a = [1,2,3,4,5,6,7,8]
+b = []
+for i in a:
+    # if i%2 == 0:
+        b.append(2*i)
+print(b)
+
+# syntax:
+# [output for i in a]
+
+a = [1,2,3,4,5,6,7,8]
+c = [2*i for i in a]
+print(c)
