@@ -227,3 +227,7 @@ def greet(lv): # lv local variable
     print(gv) # 10
 # print(lv)
 greet('one')
+
+# Q1.
+a = [1,1,1,1,2,2,3,34,23,3,22,4,32,43,4,5,4,54,5]
+# b = {1:5,2:34,5:6}
