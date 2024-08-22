@@ -1,3 +1,10 @@
-a = [1,2,3,4,5,6,7,8]
-c = [i for i in a if i%2 ==0]
+from functools import reduce
+
+# reduce(function,iterable_data)
+# function in reduce takes two inputs
+# reduce will give only one input
+
+a = [1,2,3,4,5]
+
+c = reduce(lambda x,y: x+y,a)
 print(c)

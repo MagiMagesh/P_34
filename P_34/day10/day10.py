@@ -201,9 +201,30 @@ print(a)
 c = list(filter(lambda n : int(n) % 2 ==0, a))
 print(c) # [2,4,6,'2','4']
 
+
+
+# functions
+# methods
+# librires
+# package
+
 # REDUCE:
 
+from functools import reduce
 
+# reduce(function,iterable_data)
+# function in reduce takes two inputs
+# reduce will give only one input
+
+a = [1,2,3,4,5]
+
+c = reduce(lambda x,y: x+y,a)
+print(c)
+
+b = 0
+for i in a:
+    b = b+i
+print(b)
 
 # comphrension:
 a = [1,2,3,4,5,6,7,8]
@@ -221,4 +242,16 @@ print(b)
 
 a = [1,2,3,4,5,6,7,8]
 c = [2*i for i in a]
+print(c)
+
+a = [1,2,3,4,5,6,7,8]
+c = [i for i in a if i%2 ==0]
+print(c)
+
+a = [1,2,3,4,5,6,7,8]
+c = [i for i in a if i%2 ==1]
+print(c)
+
+a = [1,2,3,4,5,6,7,8]
+c = [i for i in a if i%2 !=0]
 print(c)
