@@ -1,5 +1,4 @@
-# lambda:
-# 1. is used to create a simple single line function
+
 
 # print()
 print(print(4))
@@ -107,12 +106,43 @@ print(c) # ['1','2','3','4','5']0
 c=greater(12,5)
 print(c) # [1,2,3,4,5]
 
-def greater(a,b):
+def greater_funciton_check(a,b):
     if a>b:
         return (1,2,3,4,5)
     return ['1','2','3','4','5']
 
-c=greater(2,5)
-print(c) # ()'1','2','3','4','5')
-c=greater(12,5)
-print(c) # [1,2,3,4,5]
+c=greater_funciton_check(2,5)
+print(c) # ['1','2','3','4','5']
+c=greater_funciton_check(12,5)
+print(c) # (1,2,3,4,5)
+
+greater_fun = greater_funciton_check
+
+print(greater_fun(2,5)) # ['1','2','3','4','5']
+
+
+# lambda:
+# 1. is used to create a simple single line function
+# 2. by default lambda will return a output.
+# 3. directly we cannoct call lambda
+# 4. lambda will be given to a varibale and we will call that variable.
+
+# syntax:
+# lambda()
+
+
+lambda a,b : a + b
+
+lam = lambda a,b : a + b
+
+print(lam(1,2)) # 3
+
+lam = lambda a : int(a)
+
+print(type(lam('1234'))) # 3
+print((lam('1234'))) # 3
+
+
+# agenda
+# MRF
+# comphrension
