@@ -1,15 +1,8 @@
-try:
-    try:
-        if 41 > 5:
-            print(1)
-        print(list('1234'))
-        print(''* '')
+a = [1,2,3,4,5,6,7]
+b = [11,12,13,14]
 
-        print(int('9876'))
-    except:
-        print(''* '')
-        print('thre was error')
-    finally:
-        print('THere was an emergency')
-except:
-    print('there was new error')
+for i in b:
+    # print(i)
+    for j in a:
+        print(j*i)
+    print(10 * '-')

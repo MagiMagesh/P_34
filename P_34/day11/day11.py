@@ -48,6 +48,10 @@ with open('P_34/day11/file.txt',mode='r') as a:
     b = a.read()
 print(b)
 
+with open('P_34/day11/file1.pdf',mode='r') as a:
+    b = a.read()
+print(b)
+
 # will write a new data
 # it will replace the old data with new data
 # even if the file is not present new file will be created
@@ -56,6 +60,12 @@ with open('P_34/day11/file1.txt',mode='w') as a:
     a.write('this is new data\n')
     a.write('it will be joined with the old data\n')
     a.write('it is again it will be joined with the old data')
+
+with open('P_34/day11/file1.pdf',mode='w') as a:
+    a.write('this is new data\n')
+    a.write('it will be joined with the old data\n')
+    a.write('it is again it will be joined with the old data')
+
 
 
 # it will get appended with the old data
@@ -218,3 +228,102 @@ except:
     print('there was new error')
     
 print('hi this is Magesh')
+
+
+
+# any & all
+
+# any:
+
+a = [0,1,2,3,4,5]
+print(any(a))
+# If any one element in that Iterable data-type is true The output will be true
+
+a = (False,False)
+print(any(a))
+
+a = (False,False)
+print(any(a))
+
+# all:
+# If any all element in that Iterable data-type is true The output will be true
+
+a = [0,1,2,3,4,5]
+print(all(a)) # False
+
+a = [1,2,3,4,5]
+print(all(a)) # True
+
+
+
+# break continue
+# must be used only in the iteration.
+
+
+# pass:
+# to compelete a statement
+# it will not included in coding part.
+
+if True:
+    pass
+
+def custom_funciton():
+    pass
+
+
+
+# continue:
+# 1. it skip that particular iteration
+# anything below to continue will not be executed
+
+a = [1,2,3,4,5]
+for i in a:
+    if i == 3:
+        continue
+    print(i)
+
+
+a = [1,2,3,4,5]
+for i in a:
+    print(i)
+    pass
+    if i == 3:
+        continue
+    else:
+        pass
+
+# break:
+# 1. it terminated that particular iteration/loop
+
+a = [1,2,3,4,5]
+for i in a:
+    print(i)
+    pass
+    if i == 3:
+        break
+    else:
+        pass
+
+# break
+
+a = [1,2,3,'Mages',5,6,[1,2,3],'Jamine',8,'9',23.234,(1,3,4),{1,2,3},{1:1,2:2,3:3}] 
+
+for i in a:
+    print(i)
+    if type(i) == str:
+        continue
+    if type(i) == list:
+        break
+    print(2*i)
+    print(10*'-')
+
+a = [1,2,3,4,5,6,7]
+b = [11,12,13,14]
+
+for i in b:
+    # print(i)
+    for j in a:
+        print(j*i)
+    print(10 * '-')
+
+# iter & generator
