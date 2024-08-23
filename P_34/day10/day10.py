@@ -264,3 +264,11 @@ print(c)
 
 # MFR - higher order funcitons:
 # when any function is given as aruguments to another funciton it is an higer order funciton.
+
+# Q1.
+# Print the reverse string
+
+# Sample Input :
+# i am jsb
+# Sample Output :
+# jsb am i
