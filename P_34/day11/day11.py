@@ -326,4 +326,46 @@ for i in b:
         print(j*i)
     print(10 * '-')
 
-# iter & generator
+# Given N, K and follwed by N of integers , find two numbers such that they add up to a specific target number K. Example Input: numbers={2, 7, 11, 15}, K=9,print 'yes' if target achieved (2,7 can be added to get 9) if there is no such pair print 'no'.
+# Input Size : 1 <= N <= 100000
+# Sample Testcases :
+# INPUT
+# 7 6
+# 1 2 3 4 5 6 7
+# OUTPUT
+# yes
+
+a = [1,2,3,4,5,6,7]
+k = 7
+for i in range(len(a)):
+    for j in range(i+1,len(a)):
+        if a[i]+a[j] == k:
+            print('yes')
+            break
+    break
+
+# Q1. find wether a number is prime or not 56:
+# Q2. 1234 to print all the prime number in that range
+    
+
+# 2
+# 4
+# 5
+# 6
+# 7
+# 8
+# __
+# 5
+# 6
+# 7
+# 8
+# 9
+# __
+# 7
+# 8
+# 9
+# 10
+# _
+# 9
+# 10
+# 11
