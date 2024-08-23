@@ -80,6 +80,7 @@ print(b)
 # 2. when there is error in try block in that line try block will break
 # 3. except block will get executed.
 # 4. except block cannoct handle error.
+# 5. if there is no error in try block except will not get executed.
 
 
 print('5' + 10)
@@ -98,3 +99,122 @@ except:
     print('Please enter only number')
 
 print('Magesh outside try block')
+
+try:
+    print('all good')
+    print('Magesh')
+except:
+    print('There is some error')
+
+print('Not')
+
+
+try:
+    print('all good')
+    print('Magesh')
+    print(int('234 324'))
+except:
+    print('There is some error')
+
+print('Not')
+
+
+try:
+    if 4 > 5:
+        print(1)
+    if 'Magesh' * '':
+        print(2)
+    else:
+        print(3)
+    b = '123456'
+    print(b[6])
+    print(int('1234'))
+    print(list('1234'))
+    print(int('9876'))
+except:
+    print('thre was error')
+
+
+# else:
+# finally
+
+try:
+    logic
+except:
+    logic
+else:
+    logic
+finally:
+    logic
+
+
+try:
+    if 41 > 5:
+        print(1)
+    if 'Magesh' * '':
+        print(2)
+    print(list('1234'))
+    print(int('9876'))
+except:
+    print('thre was error')
+else:
+    print('''if there is no error in try else will also get executed. 
+          if not else will not get executed''')
+
+
+try:
+    if 41 > 5:
+        print(1)
+    print(list('1234'))
+    print(int('9876'))
+except:
+    print('thre was error')
+else:
+    print('''if there is no error in try else will also get executed. 
+          if not else will not get executed''')
+    
+try:
+    if 41 > 5:
+        print(1)
+    print(list('1234'))
+    print(''* '')
+
+    print(int('9876'))
+except:
+    print('thre was error')
+else:
+    print('''else got executed''')
+finally:
+    print('always finally will get executed')
+
+
+try:
+    if 41 > 5:
+        print(1)
+    print(list('1234'))
+    print(''* '')
+
+    print(int('9876'))
+except:
+    print(''* '')
+    print('thre was error')
+
+print('hi this is Magesh')
+
+try:
+    try:
+        if 41 > 5:
+            print(1)
+        print(list('1234'))
+        print(''* '')
+
+        print(int('9876'))
+    except:
+        print(''* '')
+        print('thre was error')
+    finally:
+        print('THere was an emergency')
+except:
+    print('there was new error')
+    
+print('hi this is Magesh')
