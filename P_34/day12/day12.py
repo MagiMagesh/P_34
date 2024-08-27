@@ -282,3 +282,29 @@ s1.student_name()
 s1.student_sex()
 s1.name_sex()
 
+# Q1. find wether a number is prime or not 56:
+
+a = 292
+prime = True
+for i in range(2,a):
+    if a % i == 0:
+        print(i)
+        prime = False
+        break
+
+if prime:
+    print('It is a prime number')
+else:
+    print('It is not a prime number')
+
+
+
+a = 293
+for i in range(2,a):
+    if a % i == 0:
+        print('It is Not aPrime')
+        break
+else:
+    print('It is Prime')
+
+# if for loops is not got terminated by default else will be triggred
