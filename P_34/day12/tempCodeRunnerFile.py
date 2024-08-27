@@ -1,16 +1,23 @@
-def yield_function(a,b,c,d):
+class school_class:
 
-    if a > b:
-        yield 10
-
-    if c > a:
-        yield 10
-
-    if a > d:
-        yield 15
-
-    if c > d:
-        return 20
+    def __init__(self,name,sex):
+        self.name = name
+        self.sex = sex
     
-a = yield_function(10,15,23,43)
-print(list(a))
+    def student_name(self):
+        print(f'it is Name function {self.name}')
+
+    def student_sex(self):
+        print('it is sex function',self.sex)
+
+    def name_sex(self):
+        print(f'Name is {self.name} and sex is {self.sex}')
+
+
+
+s1 = school_class('Magesh','m')
+
+s1.student_name()
+s1.student_sex()
+s1.name_sex()
+

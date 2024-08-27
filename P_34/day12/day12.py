@@ -14,8 +14,7 @@ a = [1,2,3,4,5,6,7]
 
 # yield
 # class
-# inheritance
-# method overriding
+
 
 a = [1,2,3,4,5,6,7]
 for i in a:
@@ -196,3 +195,90 @@ def yield_function(a,b,c,d):
     
 a = yield_function(10,15,231,43)
 print(list(a))
+
+
+
+# class:
+# OOPS - Object Oriented Programming
+
+
+a = [1,2,3,4,5]
+a.append(5)
+
+print(type([234])) # <class 'int'>
+print(list('123'))
+
+
+# car
+
+# dashboard
+# fuel injection
+# front axle
+# rear axle
+# boot
+# Engine
+
+
+class car:
+    pass
+
+
+a = car()
+b = car()
+
+print(car())
+
+class school_class:
+    pass
+
+first = school_class()
+second = school_class()
+thrid = school_class()
+
+
+first.class_name =  'First Standard'
+first.strength =  20
+first.names =  ['Magesh',"Ram",'Shiva']
+
+print(first.__dict__) # {'class_name':'First Standard',..}
+
+# self instance of that Object. i.e Object represent class
+
+class school_class:
+    
+    def name(self):
+        print('it is Name function')
+
+    def sex(self):
+        print('it is sex function')
+
+s1 = school_class()
+
+s1.name()
+s1.sex()
+
+
+
+class school_class:
+
+    def __init__(self,name,sex):
+        self.name = name
+        self.sex = sex
+    
+    def student_name(self):
+        print(f'it is Name function {self.name}')
+
+    def student_sex(self):
+        print('it is sex function',self.sex)
+
+    def name_sex(self):
+        print(f'Name is {self.name} and sex is {self.sex}')
+
+
+
+s1 = school_class('Magesh','M')
+
+s1.student_name()
+s1.student_sex()
+s1.name_sex()
+
