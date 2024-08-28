@@ -351,6 +351,34 @@ c1 = child(father_name='Ashok',mother_name='Saraswathi',name='Magesh',age=20,sex
 c1.parent_details()
 
 
+class parent:
+    def name(self):
+        print('this is name')
+
+class parent:
+    def name(self):
+        print('this is name')
+
+    def sum(self,a):
+        b = 1
+        for i in a:
+            b = b * i
+        return b
+
+
+# def sum(a): # will replace python inbuilt funciton not recommended
+#     b = 1
+#     for i in a:
+#         b = b * i
+#     return b
+
+a1 = parent()
+
+a = [1,2,3,4,5] # 120
+print(sum(a)) # 120
+print(a1.sum(a))
+
+
 # 1. inheritance
 # 2. multiple inheritance
 # 3. method overriding | 
