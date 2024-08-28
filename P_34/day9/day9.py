@@ -154,13 +154,13 @@ addition(a)
 addition(named_data)
 
 
-# inputs to a functions:
+# types of inputs to a functions:
 
 # 1. positional arguments
 # 2. multiple arguments
 # 3. keyword arguments
 # 4. multiple keyword arguments
-# 4. default  arguments
+# 5. default  arguments
 
 def  addition(*args):                 
     print(args) # tuple
