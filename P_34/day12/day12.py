@@ -308,3 +308,6 @@ else:
     print('It is Prime')
 
 # if for loops is not got terminated by default else will be triggred
+
+
+# Q2. 1234 to print all the prime number in that range
