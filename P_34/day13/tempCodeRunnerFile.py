@@ -1,37 +1,29 @@
 
+
 class arithmetic:
 
-    def __init__(self,a,b,c,d):
-        self.a = a
+    def __init__(self,a,b):
+        self.area = a # for our understanding we ill be using the input argument itself
         self.b = b
-        self.c = c
-        self.d = d
+        
 
     def addition(self):
         print('it is addition funtion')
-        # return  a + b # a & b will be treated as global variable
-        return  self.a + self.b + a
-
-
-    def subract(self):
-        print('it is subract funtion')
-        return  self.a - self.b
-
+        return  self.area + self.b
+    
     def division(self):
-        print('it is division funtion')
-        return  self.a / self.b
+        print('it is div funtion')
+        return  self.m / self.n
     
-    def power(self):
-        print('it is power funtion')
-        return  self.c ** self.d
+    def multi(self,z):
+        print('it is multi funtion')
+        return  self.m * self.n * z
     
-    def floor_div(self):
-        print('it is floor div funtion')
-        return  self.b // self.d
+a1 = arithmetic(10,20)
 
 
+a1.m = 15
+a1.n =  2
 
-a1 = arithmetic(15,30,20,3)
 
-print(a1.__dict__)
-print(dir(a1))
+print(a1.multi(10)) # 2000
