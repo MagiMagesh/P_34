@@ -198,3 +198,55 @@ v = Counter(a)
 print(type(v)) # similar to dict
 print(v['i'])  
 print(v)
+
+# if there is no termination in interation else will be exeucted
+# break will terminate the iteration
+
+
+a = [1,2,3,4,5]
+
+for i in a:
+    print(i)
+else:
+    print('else will be executed')
+
+
+a = [1,2,3,4,5]
+
+for i in a:
+    print(i)
+    if i == 5:
+        break
+else:
+    print('else will be executed')
+
+
+a = [1,2,3,4,5]
+m = 0
+while m <len(a):
+    print(a[m])
+    m = m + 1
+else:
+    print('else will be executed')
+
+
+2000
+
+for a in range(2,2000+1):
+    prime = True
+    for i in range(2,a):
+        if a % i == 0:
+            prime = False
+            break
+
+    if prime:
+        print(a,'It is a prime number')
+    
+
+for a in range(2,2000+1):
+    for i in range(2,a):
+        if a % i == 0:
+            prime = False
+            break
+    else:
+        print(a,'it is prime number')

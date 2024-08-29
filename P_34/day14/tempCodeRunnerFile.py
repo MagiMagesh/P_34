@@ -1,6 +1,7 @@
-a = 'i live in India'
-from collections import Counter
-v = Counter(a)
-print(type(v))
-print(v['i'])
-print(v)
+for a in range(2,2000+1):
+    for i in range(2,a):
+        if a % i == 0:
+            prime = False
+            break
+    else:
+        print(a,'it is prime number')
