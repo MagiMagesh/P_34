@@ -139,3 +139,28 @@ class snake(dog,cat):
 s1 = snake(1,2,3,4)
 print(dir(s1))
 s1.getinput_snake()
+
+# LIFO  - Last in first out functions or class
+
+def fun1():
+    fun2()
+    print(1)
+
+def fun2():
+    fun3()
+    print(2)
+
+def fun3():
+    fun4()
+    print(3)
+
+def fun4():
+    fun5()
+    print(4)
+
+def fun5():
+    print(5)
+
+fun1()
+
+
