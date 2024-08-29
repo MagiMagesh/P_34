@@ -381,4 +381,4 @@ print(a1.sum(a))
 
 # 1. inheritance
 # 2. multiple inheritance
-# 3. method overriding | 
+# 3. method overriding | polymorphism
