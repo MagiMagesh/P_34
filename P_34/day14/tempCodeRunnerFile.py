@@ -1,27 +1,33 @@
 
-def cricket():
-    print('cricket')
+class dog:
 
-def hockey():
-    print('hockey')
+    def __init__(self,a,b):
+        self.a = a
 
-def chess():
-    print('chess')
+    def getinput_dog(self):
+        print(self.a , self.b)
 
-def student_info(n,sport):
-    print(n)
-    print(sport())
+class cat:
+
+    def __init__(self,e):
+        self.e = e
+
+    def getinput_cat(self):
+        print(self.e , self.f)
+
+class snake(dog,cat):
+    
+    def __init__(self, c,d,a,e):
+        super().__init__(a)
+        super(cat,self).__init__(e)
+        
+        self.c = c
+        self.d = d
 
 
-n = int(input())
-if n in range(15):
-    if n == 5:
-        student_info(n,hockey)
-    elif n == 6 or n == 7:
-        student_info(n,cricket)
-    elif n == 3:
-        student_info(n,chess)
-    else:
-        print('student should be enrolled in chess')
-        student_info(n,chess)
+    def getinput_snake(self):
+        print(self.c , self.d,self.a,self.e)
 
+s1 = snake(1,2,3,4)
+print(dir(s1))
+s1.getinput_snake()
