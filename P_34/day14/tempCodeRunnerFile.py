@@ -1,3 +1,6 @@
-from day14_2 import addition_values
-
-print(addition_values([1,2,3,4]))
+a = 'i live in India'
+from collections import Counter
+v = Counter(a)
+print(type(v))
+print(v['i'])
+print(v)

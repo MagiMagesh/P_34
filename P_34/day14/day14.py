@@ -168,3 +168,33 @@ def fun5():
 fun1()
 
 
+from collections import OrderedDict
+
+# Q2. a = 'i live in India'
+# count of all the elements in a
+# ex: 'i' is repeated for 5 times
+# ex: 'l' is repeated for 4 times
+# ex: ' ' is repeated for 4 times
+
+# {'i':5,'l':4,' ': 4}
+
+a = 'i live in India'
+d = {i:a.count(i) for i in a}
+print(d)
+
+
+'Counter',
+'OrderedDict',
+'deque',
+'namedtuple',
+'UserDict',
+'UserList',
+'UserString',
+
+
+a = 'i live in India'
+from collections import Counter
+v = Counter(a)
+print(type(v)) # similar to dict
+print(v['i'])  
+print(v)
