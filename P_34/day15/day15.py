@@ -292,3 +292,55 @@ a = [1,2,'3',4,5,[1,2,3,4,5],'12','34',12,3,['magesh','value']]
 # 3. to check the type wether it is list or not
 # 4. if it is a list iterate that list
 # 5. append the step4 element to the empty list
+
+a = [1,2,'3',4,5,[1,2,3,4,5],'12','34',12,3,['magesh','value']]
+
+b = []
+for i in a:
+    if type(i) == list:
+        for j in i:
+            b.append(j)
+print(b)
+
+print(isinstance([123,1234,234,234],list)) # True
+print(isinstance('[123,1234,234,234]',list)) # False
+# isinstance
+# is used to check wether it beloged to particular data type or not
+
+
+a = [1,2,'3',4,5,[1,2,3,4,5],'12','34',12,3,['magesh','value']]
+
+b = []
+for i in a:
+    if isinstance(i,list):
+        for j in i:
+            b.append(j)
+print(b)
+
+# REQUEST - RESPONSE Cylce
+
+# any data type can be converted into json
+
+
+# JSON - JavaScript Object Notation
+import json
+
+# is majorly used to transfer a response.
+# mostly response will be in json format
+
+a = 234
+
+b = json.dumps(a)
+print(b)
+
+a = '234'
+
+b = json.dumps(a)
+print(b)
+
+a = {'Magesh':'234',"number":123,'name':'Jasmine'}
+print(a)
+b = json.dumps(a) # dict to json
+print(type(b))
+c = json.loads(b) # json to dict
+print(c)
