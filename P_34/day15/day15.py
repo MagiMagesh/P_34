@@ -344,3 +344,9 @@ b = json.dumps(a) # dict to json
 print(type(b))
 c = json.loads(b) # json to dict
 print(c)
+
+
+# 1. lambda
+# 2. higher order function
+# 3. check problems discussed in session
+# 4. class
