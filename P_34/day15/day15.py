@@ -226,3 +226,69 @@ except Exception as e: #
     print('the error is: ',e)
     print('the type of error is: ',type(e))
     print('there was an error')
+
+
+
+try:
+    a = 'Magsh'
+    10 / 0 #  10
+    print(str('asd'))
+except ZeroDivisionError:
+    print('You are dividing with 0')
+except Exception as e: # 
+    print('the error is: ',e)
+    print('the type of error is: ',type(e))
+    print('there was an error')
+
+# only the first occured except will be triggred
+# we can have a multiple except block for a try block 
+
+try:
+    a = 'Magsh'
+    10 / 0 #  10
+    print(str('asd'))
+except Exception as e: # 
+    print('the error is: ',e)
+    print('the type of error is: ',type(e))
+    print('there was an error')
+except ZeroDivisionError:
+    print('You are dividing with 0')
+
+try:
+    a = 'Magsh'
+    10 / 0 #  10
+    print(str('asd'))
+except IndexError:
+    print('reduce the value and try')
+except ZeroDivisionError:
+    print('You are dividing with 0')
+except Exception as e: # 
+    print('the error is: ',e)
+    print('the type of error is: ',type(e))
+    print('there was an error')
+
+
+try:
+    a = 'Magsh'
+    print(a[7])
+    print(str('asd'))
+except IndexError:
+    print(f'try withing 0 to {len(a)-1}')
+except ZeroDivisionError:
+    print('You are dividing with 0')
+except ValueError:
+    print('thre is value error')
+except TypeError:
+    print('thre is type error')
+except: # 
+    print('there was an error')
+
+a = [1,2,'3',4,5,[1,2,3,4,5],'12','34',12,3,['magesh','value']]
+# 1,2,3,4,5,'magesh','value'
+
+# have to use nested for loop
+# 1. create empty list
+# 2. to iterate to all the elements
+# 3. to check the type wether it is list or not
+# 4. if it is a list iterate that list
+# 5. append the step4 element to the empty list
