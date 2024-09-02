@@ -1,0 +1,2 @@
+# PROJECT:
+# 1. to take the html_url for all the data present in the https://api.github.com/repos/pandas-dev/pandas/issues
