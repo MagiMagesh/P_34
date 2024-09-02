@@ -47,9 +47,54 @@ print(label1.cget('text'))
 
 label2.config(text='Hello P34!.')
 
-button2 = tkinter.Button(root,text="Command",command=trigger)
+
+def pushbutton():
+    # label1.config(text='Hello Magesh')
+    user_input = input("Enter any input to get displayed: ")
+    label1.config(text=user_input)
+
+button2 = tkinter.Button(root,text="Push",command=pushbutton)
 button2.pack()
 
+def enter():
+    inp = entry1.get()
+    print('the user entered data is')
+    print(inp)
+
+button3 = tkinter.Button(root,text="Enter",command=enter)
+button3.pack()
+
+def entertext():
+    multi_lin_inp = text1.get('1.0',tkinter.END)
+    print('the user entered multi line data is')
+    print(multi_lin_inp)
+
+button4 = tkinter.Button(root,text="Enter Text",command=entertext)
+button4.pack()
+
+def insertentry():
+    multi_lin_inp = entry1.insert(0,'Some thing which is Good')
+    print('the user entered multi line data is')
+    print(multi_lin_inp)
+
+button5 = tkinter.Button(root,text="Insert Entry",command=insertentry)
+button5.pack()
+
+def inserttext():
+    multi_lin_inp = text1.insert("1.0",'Some thing which is Good\n')
+    print('the user entered multi line data is')
+    print(multi_lin_inp)
+
+button6 = tkinter.Button(root,text="Insert Text",command=inserttext)
+button6.pack()
+
+def deleteentry():
+    multi_lin_inp = entry1.delete(0,tkinter.END)
+    print('the user entered multi line data is')
+    print(multi_lin_inp)
+
+button7 = tkinter.Button(root,text="Delete Entry",command=deleteentry)
+button7.pack()
 
 root.mainloop()
 
