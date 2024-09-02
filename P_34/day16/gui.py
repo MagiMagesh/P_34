@@ -36,7 +36,19 @@ text1.pack()
 button1 = tkinter.Button(root,text="Submit")
 button1.pack()
 
+def trigger():
+    print('Button Clicked!!!')
 
+button2 = tkinter.Button(root,text="Command",command=trigger)
+button2.pack()
+
+print('text present in label 1')
+print(label1.cget('text'))
+
+label2.config(text='Hello P34!.')
+
+button2 = tkinter.Button(root,text="Command",command=trigger)
+button2.pack()
 
 
 root.mainloop()

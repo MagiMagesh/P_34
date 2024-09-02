@@ -1,1 +1,1 @@
-label1
+label2.config(text='Hello P34!.')
