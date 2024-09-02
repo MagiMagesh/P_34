@@ -96,6 +96,17 @@ def deleteentry():
 button7 = tkinter.Button(root,text="Delete Entry",command=deleteentry)
 button7.pack()
 
+checkbutton1 = tkinter.Checkbutton(root,text='Option1',variable=tkinter.BooleanVar())
+checkbutton2 = tkinter.Checkbutton(root,text='Option2',variable=tkinter.BooleanVar())
+checkbutton3 = tkinter.Checkbutton(root,text='Option3',variable=tkinter.BooleanVar())
+checkbutton4 = tkinter.Checkbutton(root,text='Option4',variable=tkinter.BooleanVar())
+checkbutton1.pack()
+checkbutton2.pack()
+checkbutton3.pack()
+checkbutton4.pack()
+
+
+
 root.mainloop()
 
 
