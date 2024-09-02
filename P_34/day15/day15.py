@@ -330,7 +330,7 @@ import json
 
 a = 234
 
-b = json.dumps(a)
+b = json.dumps(a) # to convert to json
 print(b)
 
 a = '234'
