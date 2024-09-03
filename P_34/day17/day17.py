@@ -26,7 +26,26 @@ def checkbutton():
     print(var3.get())
     print(var4.get())
 
-button6 = tkinter.Button(root,text="checkbox check",command=checkbutton)
-button6.pack()
+checkbx = tkinter.Button(root,text="checkbox check",command=checkbutton)
+checkbx.pack()
+
+var = tkinter.StringVar()
+# var.set('Option3')
+
+radiobutton1 = tkinter.Radiobutton(root,text='Option1',variable=var,value='Option1')
+radiobutton2 = tkinter.Radiobutton(root,text='Option2',variable=var,value='Option2')
+radiobutton3 = tkinter.Radiobutton(root,text='Option3',variable=var,value='Option3')
+radiobutton4 = tkinter.Radiobutton(root,text='Option4',variable=var,value='Option4')
+radiobutton1.pack()
+radiobutton2.pack()
+radiobutton3.pack()
+radiobutton4.pack()
+
+def radiobutton():
+    print('the user entered multi line data is')
+    print(var.get())
+
+radiobtn = tkinter.Button(root,text="checkbox check",command=radiobutton)
+radiobtn.pack()
 
 root.mainloop()
