@@ -49,3 +49,8 @@ radiobtn = tkinter.Button(root,text="checkbox check",command=radiobutton)
 radiobtn.pack()
 
 root.mainloop()
+
+# check after this session
+# round()
+# floor()
+# ceil()
