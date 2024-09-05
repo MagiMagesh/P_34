@@ -7,7 +7,6 @@ db = mysql.connector.connect(
     password = 'magesh1234',
     port = '3306',
     database = 'p34'
-
 )
 
 print(db)
@@ -23,11 +22,18 @@ print(db)
 # cursor.execute(query)
 # print(cursor.fetchall()) # [(1,2,3,4),(11,12,13,14)]
 
-
-query = "insert into student1 values (5,'M','mages@123.sadf',1000,'no');"
+query = 'select column_name from information_schema.columns where table_name = "student"'
 cursor = db.cursor() # we need to create a cursor
 cursor.execute(query)
+print(cursor.fetchall()) # [(1,2,3,4),(11,12,13,14)]
+
+
+# query = "insert into student1 values (5,'M','mages@123.sadf',1000,'no');"
+# cursor = db.cursor() # we need to create a cursor
+# cursor.execute(query)
 
 db.commit() # data will not be inserted
+
+# pip install mysql-connector-python
 
 print(cursor)
