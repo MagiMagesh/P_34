@@ -49,4 +49,6 @@
 # char()      str # static size
 # date              # should be given as str in date format
 # time              # should be given as str in time format
-# datetime
+# datetime    datetime
+# bool        bool | boolean
+# null        None
