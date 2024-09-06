@@ -1,8 +1,8 @@
 import re
 
-# 1. findall - output will be a list
-# 2. search
-# 3. match
+# 1. findall    - output will be a list
+# 2. search     - to tell wethere that pattern exists it will give first occured recored
+# 3. match      - from starting till wherever it matches if everything matches then only we will be getting the result   
 # 4. split
 
 # re.findall(pattern,str)
@@ -152,3 +152,44 @@ a = 'my pen mysore myinasd'
 pattern = 'asd$'
 b = re.findall(pattern,a) # ['1','2','3','2',3','4','1','2','3']
 print(b)
+
+
+import re
+a = 'MY phone number is 123 234 my AGE is 12 door no is 3/'
+pattern = '\w'
+b = re.search(pattern,a) 
+print(b)
+
+import re
+a = '123423 1234423 12344231234423'
+pattern = '\d{7,10}'
+b = re.search(pattern,a) # ['1','2','3','2',3','4','1','2','3']
+print(b)
+print(b.span())
+print(b.group())
+
+
+import re
+a = '123423 1234423 12344231234423'
+pattern = '\d{7,10}'
+b = re.match(pattern,a) # ''
+print(b)
+if b:
+    print('it is valid')
+
+import re
+a = '213.23_er-we4.234@asdf.asdf'
+pattern = '[a-zA-Z0-9\.\_\-]+@[a-z]+\.[a-z]{3,4}'
+b = re.match(pattern,a) # ''
+print(b)
+if b:
+    print('it is valid')
+
+
+import re
+a = '213.23_er-we4.234@asdf.asdfda'
+pattern = '[a-zA-Z0-9\.\_\-]+@[a-z]+\.[a-z]{3,4}$'
+b = re.match(pattern,a) # ''
+print(b)
+if b:
+    print('it is valid')
